@@ -1,16 +1,13 @@
-import { useEffect } from "react";
-import { actorsData } from "./actorsAPI";
 import "./App.css";
+import Blog from "./pages/Blog";
+
 
 function App() {
-  useEffect(() => getActors(), []);
-
-  const getActors = () =>
-    actorsData.then((res) => {
-      console.log(res);
-    });
-
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Blog />
+    </div>
+  );
 }
 
 export default App;
